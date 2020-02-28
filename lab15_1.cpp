@@ -39,7 +39,8 @@ void findRowSum(const double *dPtr,double *result,int N,int M){
 	for(int j =0;j<M;j++){
 		double sum = 0;
 		for(int i = 0 ; i < N ; i++ ){
-		 	sum += *(dPtr+i+j);
+		 	sum += *(dPtr);
+			dPtr++;
 		}
 		result[j] = sum;
 	}

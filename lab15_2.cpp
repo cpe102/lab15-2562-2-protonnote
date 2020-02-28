@@ -39,7 +39,7 @@ void findColSum(const double *dPtr,double *result,int N,int M){
 	
 	for(int j = 0 ; j < N ; j++){
 		double sum = 0;
-		for(int i = 0 ; i < 7 ; i++){
+		for(int i = 0 ; i < M ; i++){
 		 	sum += *((dPtr+i*N)+j);
 		}
 		result[j] = sum;
