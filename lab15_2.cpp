@@ -51,7 +51,7 @@ void showData(double *dPtr,int N,int M){
 		if(i%M == 0){ 
 			cout << "\n";
 		}
-		cout << setw(7) << *(dPtr+i) ;
+		cout << setw(6) << left << *(dPtr+i) ;
 	}
 	cout << endl;
 }
